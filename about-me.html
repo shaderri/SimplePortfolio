@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="index.css" />
+		<title>Portfolio</title>
+	</head>
+	<body>
+		<div class="page">
+			<main class="page__content">
+				<header class="header">
+					<div class="logo">Madelyn Torff</div>
+					<nav class="nav">
+						<a href="#" class="nav-link active">About</a>
+						<a href="index.html#projects" class="nav-link">Projects</a>
+						<a onclick="location.href='#contacts'" class="nav-link">Contacts</a>
+					</nav>
+				</header>
+				<section class="first-display">
+					<div class="first-display__content aboutme-content">
+						<h1 class="title title_h1">About me</h1>
+						<p class="first-display__descr">
+							Nisl arcu, scelerisque neque ut. Tincidunt amet, tempor duis
+							tortor neque auctor dis ipsum. Pretium cras amet odio amet
+							eleifend id sed cras sed. Aliquet risus posuere aliquet imperdiet
+							sit.
+						</p>
+						<div class="first-display__actions">
+							<button onclick="window.history.back()" class="btn btn_primary">
+								Go Back
+							</button>
+							<img
+								src="src/assets/img/bg-2.jpg"
+								srcset="src/assets/img/bg-2@2x.jpg 2x"
+								alt="Madelyn Torff"
+								class="first-display__bg bg-2"
+							/>
+						</div>
+					</div>
+				</section>
+
+				<section class="contacts" id="contacts">
+					<h2 class="title title_h2 title_decorated">Contacts</h2>
+					<form action="" class="form">
+						<div class="field form_field">
+							<label for="form-name" class="field__label">Name</label>
+							<input id="form-name" type="text" class="field__input" />
+						</div>
+						<div class="field form_field">
+							<label for="form-email" class="field__label">Email</label>
+							<input id="form-email" type="text" class="field__input" />
+						</div>
+						<div class="field form_field">
+							<label for="form-message" class="field__label">Message</label>
+							<textarea
+								id="form-message"
+								type="text"
+								class="field__input field__textarea"
+								rows="11"
+							></textarea>
+						</div>
+						<button href="#" class="btn btn_primary">Send</button>
+					</form>
+				</section>
+
+				<footer class="footer">
+					<div class="socials">
+						<a href="#" class="socials__link">
+							<img
+								src="src/assets/icons/email.svg"
+								alt="email"
+								class="socials__icon"
+							/>
+						</a>
+					</div>
+					<p class="copyright">Madelyn Torff 2025</p>
+				</footer>
+			</main>
+			<img src="src/assets/icons/footer_bg.svg" alt="" class="footer__decor" />
+		</div>
+	</body>
+</html>
